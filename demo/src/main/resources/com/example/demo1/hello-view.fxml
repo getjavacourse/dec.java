@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="800.0" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.control.HelloController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Add" />
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="About">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+
+       <TableView fx:id="tableView" disable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="300.0" minWidth="500.0" prefHeight="300.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+           <columns>
+             <TableColumn fx:id="id" prefWidth="47.0" text="ID" />
+             <TableColumn fx:id="name" prefWidth="92.0" text="Name" />
+             <TableColumn fx:id="lastName" prefWidth="97.0" text="Last Name" />
+             <TableColumn fx:id="phoneNumber" prefWidth="118.0" text="Phone Number" />
+             <TableColumn fx:id="email" prefWidth="240.0" text="Email" />
+         </columns>
+       </TableView>
+
+
+   </center>
+   <left>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="150.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+          <Button fx:id="getStudentsPage" alignment="CENTER" cache="true" contentDisplay="CENTER" maxHeight="30.0" maxWidth="80.0" minHeight="30.0" minWidth="60.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Students" textAlignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="getTeachersPage" alignment="CENTER" contentDisplay="CENTER" maxHeight="30.0" maxWidth="80.0" minHeight="30.0" minWidth="60.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Teachers" textAlignment="CENTER" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </left>
+   <right>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="15.0" prefHeight="500.0" prefWidth="150.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="800.0" prefHeight="650.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.control.Controller_2">
+   <left>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="336.0" prefWidth="123.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+          <Button fx:id="getStudentsPageButton" alignment="CENTER" cache="true" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#studentsMouseEntered" onMouseExited="#studentsMouseExited" onMousePressed="#studentsOnClick" opacity="0.8" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #4286f4; -fx-background-radius: 20;" text="Students" textAlignment="CENTER" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="getTeachersPageButton" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#teachersMouseEntered" onMouseExited="#teachersMouseExited" onMousePressed="#teachersOnClick" opacity="0.8" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #4286f4; -fx-background-radius: 20;" text="Teachers" textAlignment="CENTER" textFill="WHITE" />
+         </children>
+         <padding>
+            <Insets top="100.0" />
+         </padding>
+      </VBox>
+   </left>
+   <right>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="15.0" prefHeight="342.0" prefWidth="127.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="142.0" prefWidth="790.0" style="-fx-border-width: 1; -fx-background-color: #f0f0e4; -fx-opacity: 1; -fx-background-radius: 10; -fx-border-color: #dcd6f7; -fx-border-radius: 10;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" top="10.0" />
+         </BorderPane.margin>
+         <children>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="646.0" spacing="2.0">
+               <children>
+                  <Label fx:id="labelNewPerson" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="419.0" text="Click on Action Button to Modify SUP_DEC Database" textAlignment="CENTER" textFill="#1838a3">
+                     <font>
+                        <Font name="Consolas" size="14.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="633.0" spacing="20.0">
+                     <children>
+                        <Button fx:id="actionButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#actions" onMouseEntered="#actionButtonMouseEntered" onMouseExited="#actionButtonMouseExited" opacity="0.8" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #4286f4; -fx-background-radius: 10;" text="Action" textFill="WHITE" />
+                        <Button fx:id="saveToStudentsButton" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#saveToStudentsAction" onMouseEntered="#saveToStudentsButtonMouseEntered" onMouseExited="#saveToStudentsButtonMouseExited" opacity="0.0" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #4286f4; -fx-background-radius: 10;" text="Add Student" textAlignment="CENTER" textFill="WHITE" />
+                        <Button fx:id="saveToTeachersButton" alignment="CENTER" disable="true" layoutX="237.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#saveToTeachersAction" onMouseEntered="#saveToTeachersButtonMouseEntered" onMouseExited="#saveToTeachersButtonMouseExited" opacity="0.0" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #4286f4; -fx-background-radius: 10;" text="Add Teacher" textAlignment="CENTER" textFill="WHITE" />
+                        <Button fx:id="deleteDataBaseButton" alignment="CENTER" disable="true" layoutX="387.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#deleteDataBaseButtonOperation" onMouseEntered="#deleteButtonMouseEntered" onMouseExited="#deleteButtonMouseExited" opacity="0.0" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #4286f4; -fx-background-radius: 10;" text="Delete" textAlignment="CENTER" textFill="WHITE" />
+                        <Button fx:id="cancelAddingButton" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cancelAction" onMouseEntered="#cancelButtonMouseEntered" onMouseExited="#cancelButtonMouseExited" opacity="0.0" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #4286f4; -fx-background-radius: 10;" text="Cancel" textAlignment="CENTER" textFill="WHITE" />
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </VBox>
+            <HBox fx:id="addNewBox" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.0" prefHeight="40.0" prefWidth="585.0" spacing="2.0">
+               <children>
+                  <TextField fx:id="newIdTextFiled" alignment="CENTER" prefHeight="27.0" prefWidth="96.0" promptText="ID" />
+                  <TextField fx:id="newNameTextFiled" alignment="CENTER" prefHeight="27.0" prefWidth="96.0" promptText="Name" />
+                  <TextField fx:id="newLastNameTextFile" alignment="CENTER" prefHeight="27.0" prefWidth="96.0" promptText="Last Name" />
+                  <TextField fx:id="newPhoneNumberTextFile" alignment="CENTER" prefHeight="27.0" prefWidth="96.0" promptText="Phone Number" />
+                  <TextField fx:id="newEmailTextFiled" alignment="CENTER" maxWidth="250.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="96.0" promptText="Email" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </bottom>
+   <center>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="324.0" prefWidth="551.0" spacing="10.0">
+         <ImageView fx:id="imageViewDatabase" fitHeight="45.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@sql.png" />
+            </image>
+         </ImageView>
+         <Label fx:id="labelSUP_DECDatabase" contentDisplay="CENTER" text="SUP_DEC Database" textFill="#1234b8">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label><TableView fx:id="tableView" blendMode="MULTIPLY" cache="true" cacheHint="SPEED" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#onMouseEnteredTableView" onMouseExited="#onMouseExitedTableView" opacity="0.8" prefHeight="250.0" prefWidth="500.0" style="-fx-background-radius: 5;" BorderPane.alignment="CENTER">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="47.0" style="-fx-background-radius: 10;" text="ID" />
+            <TableColumn fx:id="nameColumn" prefWidth="92.0" style="-fx-background-radius: 10;" text="Name" />
+            <TableColumn fx:id="lastNameColumn" prefWidth="97.0" style="-fx-background-radius: 10;" text="Last Name" />
+            <TableColumn fx:id="phoneNumberColumn" prefWidth="118.0" style="-fx-background-radius: 10;" text="Phone Number" />
+            <TableColumn fx:id="emailColumn" prefWidth="240.0" style="-fx-background-radius: 10;" text="Email" />
+         </columns>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend mode="BLUE" opacity="0.8">
+               <topInput>
+                  <BoxBlur>
+                     <input>
+                        <GaussianBlur />
+                     </input>
+                  </BoxBlur>
+               </topInput>
+            </Blend>
+         </effect>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView> </VBox>
+   </center>
+   <top>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="105.0" prefWidth="791.0" style="-fx-border-color: #dcd6f7; -fx-border-radius: 10; -fx-background-color: #f0f0e4;" translateY="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="31.0" prefWidth="800.0">
+               <children>
+                  <MenuBar maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="27.0" prefWidth="780.0" style="-fx-background-color: 0;">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="File">
+                        <items>
+                          <MenuItem fx:id="close" mnemonicParsing="false" onAction="#closeMainPage" text="Close" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="About">
+                           <items>
+                              <MenuItem fx:id="about" mnemonicParsing="false" onAction="#aboutAction" text="About" />
+                           </items></Menu>
+                    </menus>
+                  </MenuBar>
+               </children></HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="94.0" prefWidth="790.0">
+               <children>
+                  <ImageView fx:id="imageViewSUP_DEC" fitHeight="80.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" translateX="-5.0">
+                     <image>
+                        <Image url="@dec2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </top>
+</BorderPane>

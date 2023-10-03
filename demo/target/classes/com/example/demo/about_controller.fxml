@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="800.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.control.Controller_3">
+   <children>
+      <ImageView fitHeight="100.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dec2.png" />
+         </image>
+      </ImageView>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #f0f0e4; -fx-background-insets: 20; -fx-background-radius: 0; -fx-border-color: #dcd6f7; -fx-border-radius: 10;">
+         <children>
+            <TextArea editable="false" layoutX="9.0" layoutY="26.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="382.0" text="&#10;&#10;This educational    application   is designed    to nurture &#10;teamwork   skills  among   students   while empowering &#10;them  to craft  applications   using Java,   phpMyAdmin &#10;for database   management,   and JavaFX    for creating interactive GUIs.&#10;&#10; Its core    mission is to instill   the collaborative    spirit&#10;essential   in the  world    of software   development. By engaging    in group    projects,    students     learn  the intricacies     of teamwork,    while     gaining   practical experience    in Java     programming       and database &#10;management. Moreover, they master the art of signing user-friendly  interfaces  through JavaFX.&#10;&#10; In  essence,  this app  serves as a crucible  for the next &#10;generation    of developers,    fostering  both technical &#10;expertise   and collaborative   prowess." wrapText="true">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font name="Microsoft New Tai Lue" size="14.0" />
+               </font>
+            </TextArea>
+         </children></Pane>
+   </children>
+</VBox>

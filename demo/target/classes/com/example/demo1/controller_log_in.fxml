@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="800.0" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.control.Controller_1">
+   <left>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="260.0" prefWidth="122.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </left>
+   <right>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="15.0" prefHeight="260.0" prefWidth="127.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="119.0" prefWidth="800.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets top="20.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+   <top>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="800.0" spacing="10.0" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="323.0" prefWidth="550.0" spacing="1.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="ImageViewId" fitHeight="116.0" fitWidth="213.0" pickOnBounds="true" preserveRatio="true" translateY="-20.0">
+               <image>
+                  <Image url="@dec.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labelName" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="400.0" text="Enter Admin Name" textFill="#1672c9" />
+            <TextField fx:id="textFiledAdmin" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#mouseEnteredTextFiledAdmin" onMouseExited="#mouseExitedTextFiledAdmin" prefHeight="30.0" prefWidth="350.0" promptText="Admin" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="85.0" layoutY="228.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="400.0" text="Enter Password" textFill="#1672c9" />
+            <PasswordField fx:id="textFiledPassword" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#mouseEnteredPasswordFiled" onMouseExited="#mouseExitedPasswordFiled" prefHeight="30.0" prefWidth="350.0" promptText="Password" />
+            <Button fx:id="logInButton" alignment="CENTER" contentDisplay="CENTER" depthTest="ENABLE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#logInOnMouseClicked" onMouseEntered="#logInOnMouseEntered" onMouseExited="#logInOnMouseExited" opacity="0.8" pickOnBounds="false" prefHeight="30.0" prefWidth="350.0" snapToPixel="false" style="-fx-background-color: #1234B8;" text="LOG_IN" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.356435775756836" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></Button>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
